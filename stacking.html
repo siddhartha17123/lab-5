@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Stacking</title>
+        <style>
+            #pic1{
+                position: absolute;
+            }
+            #pic1{
+                position: absolute;
+                top: 70px;
+                left: 60px;
+            }
+        </style>
+
+        <body>
+            <a href="javascript:click('pic1')">
+                <img src="oyAnb7.jpg" height="200px" width="200px" id="pic1">
+                
+                <br>
+            </a>
+            <a href="javascript:click('pic2')"><img src="football1.jpg"height="200px" width="200px" id="pic2">
+                
+            </a>
+
+            <script>
+                function click(id){
+                    if(id=='pic1'){
+                         document.getElementById('pic1').style.zIndex ="1";
+                         document.getElementById('pic2').style.zIndex ="0";
+
+                    }
+                    else{
+                         document.getElementById('pic2').style.zIndex ="1";
+                         document.getElementById('pic1').style.zIndex ="0";
+
+
+                    }
+                    
+                    
+                }
+
+            </script>
+        </body>
+    </head>
+</html>

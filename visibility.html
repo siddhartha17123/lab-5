@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Image Visibility</title>
+
+        <body>
+            <img src="oyAnb7.jpg" id="pic" height="100px" width="100px"><br></br>
+            <button onclick="Click()">Click Here</button>
+
+            <script>
+                function Click(){
+                    var img = document.getElementById('pic');
+                    if(img.style.visibility == "visible"){
+                        img.style.visibility ="hidden";
+                    }
+                    else{
+                        img.style.visibility ="visible";
+                    }
+                }
+
+            </script>
+        </body>
+    </head>
+</html>
